@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">O planner</string>
+    <string name="today">Сегодня</string>
+    <string name="tomorrow">Завтра</string>
+    <string name="later">Позже</string>
+    <string name="description">Описание</string>
+    <string name="choose_deadline">Выбрать срок</string>
+    <string name="add_subtask">Добавить подзадачу</string>
+    <string name="cancel">ОТМЕНИТЬ</string>
+    <string name="ok">ОК</string>
+    <string name="title">Название</string>
+    <string name="emotion">Выбери свою эмоцию</string>
+    <string name="describe_your_day">Опиши свой день</string>
+    <string name="main_menu">Главное меню</string>
+    <string name="ideas">Идеи</string>
+    <string name="diary">Ежедневник</string>
+    <string name="settings">Настройки</string>
+    <string name="what_to_do">Что сегодня сделать?</string>
+    <string name="delete">УДАЛИТЬ</string>
+    <string name="set_reminder">Напоминания</string>
+    <string name="set_reminder_time">Настроить время напоминаний</string>
+</resources>

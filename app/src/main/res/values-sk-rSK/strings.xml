@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">O planner</string>
+    <string name="today">Dnes</string>
+    <string name="tomorrow">Zajtra</string>
+    <string name="later">Neskôr</string>
+    <string name="description">Popis</string>
+    <string name="choose_deadline">Zvoľ termin</string>
+    <string name="add_subtask">Pridať podulohu</string>
+    <string name="cancel">ZRUŠIŤ</string>
+    <string name="ok">OK</string>
+    <string name="title">Nazov</string>
+    <string name="emotion">Vyber svoju emociu</string>
+    <string name="describe_your_day">Popiš svoj deň</string>
+    <string name="main_menu">Hlavne menu</string>
+    <string name="ideas">Napady</string>
+    <string name="diary">Diár</string>
+    <string name="settings">Nastavenia</string>
+    <string name="what_to_do">Čo robiť dnes?</string>
+    <string name="delete">ZMAZAŤ</string>
+    <string name="set_reminder">Pripomenutia</string>
+    <string name="set_reminder_time">Nastaviť čas pripomienky</string>
+</resources>

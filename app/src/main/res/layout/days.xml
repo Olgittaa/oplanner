@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:background="@drawable/border_line"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dateText"
+        style="@style/TextViewStyle"
+        android:layout_width="0dp"
+        android:layout_weight="0.4"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/descriptionText"
+        style="@style/TextViewStyle"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:textSize="13sp"/>
+
+    <ImageView
+        android:id="@+id/emogiImage"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"/>
+
+</LinearLayout>
