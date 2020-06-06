@@ -120,8 +120,6 @@ public class SettingsActivity extends Activity {
                 showTimePickerDialog(hour, minute);
             }
         });
-
-        Toast.makeText(this,appPreferences.getHour()+" "+appPreferences.getMin(), Toast.LENGTH_SHORT).show();
     }
 
 
@@ -145,17 +143,17 @@ public class SettingsActivity extends Activity {
         builder.show();
     }
 
-    public String getFormatedTime(int h, int m) {
 
-        String dateString = h + ":" + m;
+    public String getFormatedTime(int h, int m) {
+        String dateStr = "";
         try {
             SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
-            Date d = sdf.parse(dateString);
-            dateString = sdf.format(d);
+            Date date = sdf.parse(h + ":" + m);
+            dateStr = sdf.format(date);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return dateString;
+        return dateStr;
     }
 
     public void setLocale(String lang) {
@@ -167,4 +165,11 @@ public class SettingsActivity extends Activity {
                 getBaseContext().getResources().getDisplayMetrics());
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(SettingsActivity.this, MainActivity.class));
+        finish();
+
+    }
 }

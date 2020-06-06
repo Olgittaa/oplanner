@@ -20,4 +20,5 @@
     <string name="delete">ZMAZAŤ</string>
     <string name="set_reminder">Pripomenutia</string>
     <string name="set_reminder_time">Nastaviť čas pripomienky</string>
+    <string name="notif_title">Pozri svoje ulohy na dnes</string>
 </resources>

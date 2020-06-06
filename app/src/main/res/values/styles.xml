@@ -86,19 +86,14 @@
         <item name="android:minHeight">48dp</item>
     </style>
 
-
-
-
-
-    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
-        <item name="colorAccent">@color/colorPrimary</item>
-        <item name="colorControlNormal">#ffffff</item>
+    <style name="Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:checked">false</item>
     </style>
 
-    <style name="switch_theme">
-        <item name="thumbTint">@color/colorPrimaryDark</item>
-        <item name="trackTint">@color/colorPrimaryDark</item>
+    <style name="spinner">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textSize">18sp</item>
     </style>
-
 
 </resources>

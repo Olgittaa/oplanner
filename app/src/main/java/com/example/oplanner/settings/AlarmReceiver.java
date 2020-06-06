@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.example.oplanner.MainActivity;
+import com.example.oplanner.R;
 import com.example.oplanner.SettingsActivity;
 
 public class AlarmReceiver extends BroadcastReceiver {
@@ -18,8 +19,7 @@ public class AlarmReceiver extends BroadcastReceiver {
                 return;
             }
         }
-        NotificationScheduler.showNotification(context, SettingsActivity.class,
-                "You have 5 unwatched videos", "Watch them now?");
+        NotificationScheduler.showNotification(context, SettingsActivity.class, String.valueOf(R.string.notif_title));
     }
 }
 

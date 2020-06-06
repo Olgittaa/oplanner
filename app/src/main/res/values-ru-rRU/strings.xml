@@ -20,4 +20,5 @@
     <string name="delete">УДАЛИТЬ</string>
     <string name="set_reminder">Напоминания</string>
     <string name="set_reminder_time">Настроить время напоминаний</string>
+    <string name="notif_title">Посмотри свои задачи на сегодня</string>
 </resources>

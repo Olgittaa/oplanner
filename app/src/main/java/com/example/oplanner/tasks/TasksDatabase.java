@@ -7,8 +7,6 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.TypeConverters;
-import androidx.room.migration.Migration;
-import androidx.sqlite.db.SupportSQLiteDatabase;
 
 @Database(
         entities = {Task.class}, version = 1)
@@ -16,12 +14,6 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 public abstract class TasksDatabase extends RoomDatabase {
     public abstract TaskDao taskDao();
 
-    static final Migration FROM_1_TO_2 = new Migration(1, 2) {
-        @Override
-        public void migrate(final SupportSQLiteDatabase database) {
-
-        }
-    };
     private static volatile TasksDatabase db;
 
     public static TasksDatabase getDb(Context context) {
@@ -32,7 +24,6 @@ public abstract class TasksDatabase extends RoomDatabase {
                 if (db == null) {
                     db = result = Room.databaseBuilder(context.getApplicationContext(),
                             TasksDatabase.class, "task-database")
-                            //.addMigrations(FROM_1_TO_2)
                             .build();
                 }
             }
