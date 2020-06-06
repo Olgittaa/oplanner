@@ -124,11 +124,7 @@ public class SettingsActivity extends Activity {
 
 
     private void showTimePickerDialog(int h, int m) {
-
-        LayoutInflater inflater = getLayoutInflater();
-        View view = inflater.inflate(R.layout.timepicker_header, null);
-
-        TimePickerDialog builder = new TimePickerDialog(this, R.style.Theme_AppCompat_Dialog,
+        TimePickerDialog builder = new TimePickerDialog(this, R.style.Dialog,
                 new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker timePicker, int hour, int min) {
@@ -138,8 +134,6 @@ public class SettingsActivity extends Activity {
                         NotificationScheduler.setReminder(SettingsActivity.this, AlarmReceiver.class, appPreferences.getHour(), appPreferences.getMin());
                     }
                 }, h, m, false);
-
-        builder.setCustomTitle(view);
         builder.show();
     }
 
